@@ -1,0 +1,106 @@
+<header class="header">
+  <div class="logo-area">
+    <a href="/home/index">
+      <h1>경희<span>族</span>닷컴</h1>
+    </a>
+  </div>
+  <div class="etc-area">
+    <a href="/home/create">
+      <button class="btn btn-write">
+        족보 기부하기
+      </button>
+    </a>  
+  </div>
+</header>
+<main class="main">
+  <h2 class="post-h-tag">족보 내용</h2>
+  <div class="wrapper text-group clearfix">
+    <div class="wrapper title-group">
+      <div class="subject-card">
+      <div class="card-container">
+        <dl>
+          <dt>
+            <%= @one_post.course %>
+          </dt>
+          <dd>
+            <%= @one_post.prof %>
+          </dd>
+          <dd>
+            <%= @one_post.semester %>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    </div>
+    <div class="detail-group">
+      <dl>
+        <dt>
+          전공
+        </dt>
+        <dd>
+          <%= @one_post.major %>
+        </dd>
+      </dl>
+      <dl>
+        <dt>
+          글쓴이
+        </dt>
+        <dd>
+          <%= @one_post.writer %>
+        </dd>
+      </dl>
+      <dl>
+        <dt>
+          첨부파일
+        </dt>
+        <dd class="detail-item-link">
+          <a href="<%= @one_post.file_url %>" download>
+            <% unless @one_post.file_url.try(:empty?) %>
+              <%= @one_post.file_url.try(:split, "/").try(:last) %>
+            <% end %>
+          </a>  
+        </dd>
+      </dl>
+    </div>
+    <div class="detail-group content-item">
+      <p>
+        <%= @one_post.content %>
+      </p>
+    </div>
+  </div>
+  <div class="wrapper recent-group">
+    <h2>"<%= @one_post.course %>" 과목의 족보 목록</h2>
+    <div class="subject-components clearfix">
+      <% @post_course.each do |p| %>
+        <div class="subject-card">
+          <a href="#">
+            <div class="card-container">
+              <dl>
+                <dt>
+                  <%= p.course %>
+                </dt>
+                <dd>
+                  <%= p.prof %>
+                </dd>
+                <dd>
+                  <%= p.semester %>
+                </dd>
+              </dl>
+            </div>
+          </a>
+        </div>
+      <% end %>  
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="copy-component">
+    <p>© 2018 경희족닷컴 ALL RIGHTS RESERVED.</p>
+    <a class="email" href="#">
+      hyeok1323@gmail.com
+    </a>
+      <div class="top animation-container">
+        top
+      </div>
+  </div>
+</footer>

@@ -1,0 +1,184 @@
+<header class="header">
+  <div class="logo-area">
+    <a href="/home/index">
+      <h1>경희<span>族</span>닷컴</h1>
+    </a>
+  </div>
+</header>
+<main class="main">
+  <h2>족보 기부하기</h2>
+  <form action="/home/post_write" method="post" enctype="multipart/form-data" class="wrapper form-group clearfix">
+    <div class="form-item full-item clearfix">
+      <p>글쓴이 :</p>
+      <input type="text" class="input" name="writer" placeholder="" required>
+    </div>
+    <div class="form-item clearfix">
+      <p>교수님 :</p>
+      <input type="text" class="input" name="prof" placeholder="" required>
+    </div>
+    <div class="form-item clearfix">
+      <p>수업이름 :</p>
+      <input type="text" class="input" name="course" placeholder="" required>
+    </div>
+    <div class="form-item clearfix">
+      <p>족보 학과 :</p>
+      <select name="major" required>
+        <option value="" selected disabled hidden>학과를 선택해주세요.</option>
+        <option value="후마니타스 칼리지">후마니타스 칼리지</option>
+        <option value="경영대학">경영대학</option>
+        <option value="생활과학대학">생활과학대학</option>
+        <option value="한의예과">한의예과</option>
+        <option value="치의학과">치의학과</option>
+        <option value="약학과">약학과</option>
+        <option value="약학대학공통">약학대학공통</option>
+        <option value="음악대학">음악대학</option>
+        <option value="무용학부 한국무용">무용학부 한국무용</option>
+        <option value="무용학부 현대무용">무용학부 현대무용</option>
+        <option value="무용학부 발레">무용학부 발레</option>
+        <option value="ROTC과정 군사학">ROTC과정 군사학</option>
+        <option value="법학부">법학부</option>
+        <option value="경제학과">경제학과</option>
+        <option value="무역학과">무역학과</option>
+        <option value="정치외교학과">정치외교학과</option>
+        <option value="행정학과">행정학과</option>
+        <option value="사회학과">사회학과</option>
+        <option value="언론정보학과">언론정보학과</option>
+        <option value="국제통상·금융투자학과">국제통상·금융투자학과</option>
+        <option value="식품영양학과">식품영양학과</option>
+        <option value="의상학과">의상학과</option>
+        <option value="아동가족학과">아동가족학과</option>
+        <option value="주거환경학과">주거환경학과</option>
+        <option value="의학과">의학과</option>
+        <option value="의예과">의예과</option>
+        <option value="한의학과">한의학과</option>
+        <option value="치의예과">치의예과</option>
+        <option value="한약학과">한약학과</option>
+        <option value=">약과학과">약과학과</option>
+        <option value="기악과">기악과</option>
+        <option value="성악과">성악과</option>
+        <option value="작곡과">작곡과</option>
+        <option value="관광학부 관광학부">관광학부 관광학부</option>
+        <option value="관광학부 문화관광콘텐츠학과">관광학부 문화관광콘텐츠학과</option>
+        <option value="관광학부 관광학과">관광학부 관광학과</option>
+        <option value="Hospitality경영학부">Hospitality경영학부</option>
+        <option value="호텔경영학">호텔경영학과</option>
+        <option value="컨벤션경영학과">컨벤션경영학과</option>
+        <option value="외식경영학과">외식경영학과</option>
+        <option value="조리·서비스경영학과">조리·서비스경영학과</option>
+        <option value=">문화관광산업학과">문화관광산업학과</option>
+        <option value="조리산업학과">조리산업학과</option>
+        <option value="자율전공학과">자율전공학과</option>
+        <option value="자율전공학과 글로벌리더">자율전공학과 글로벌리더</option>
+        <option value="국어국문학과">국어국문학과</option>
+        <option value="사학과">사학과</option>
+        <option value="철학과">철학과</option>
+        <option value="영어영문학과">영어영문학과</option>
+        <option value="응용영어통번역학과">응용영어통번역학과</option>
+        <option value="회계ㆍ세무학과">회계ㆍ세무학과</option>
+        <option value="경영학과">경영학과</option>
+        <option value="지리학과">지리학과</option>
+        <option value="정보디스플레이학과">정보디스플레이학과</option>
+        <option value="수학과">수학과</option>
+        <option value="물리학과">물리학과</option>
+        <option value="화학과">화학과</option>
+        <option value="생물학과">생물학과</option>
+        <option value=">간호학과">간호학과</option>
+        <option value="간호학과(야) 간호학전공">간호학과(야) 간호학전공</option>
+        <option value="미술학부">미술학부</option>
+        <option value="미술학부 한국화">미술학부 한국화</option>
+        <option value="미술학부 회화">미술학부 회화</option>
+        <option value="미술학부 조소">미술학부 조소</option>
+        <option value="무용학부 무용학부">무용학부 무용학부</option>
+        <option value="컴퓨터공학과">컴퓨터공학과</option>
+        <option value="소프트웨어융합학과">소프트웨어융합학과</option>
+        <option value="생명과학대학">생명과학대학</option>
+        <option value="예술·디자인대학">예술·디자인대학</option>
+        <option value="체육대학">체육대학</option>
+        <option value="교직전공">교직전공</option>
+        <option value="프랑스어학과">프랑스어학과</option>
+        <option value="스페인어학과">스페인어학과</option>
+        <option value="러시아어학과">러시아어학과</option>
+        <option value="중국어학과">중국어학과</option>
+        <option value="일본어학과">일본어학과</option>
+        <option value="한국어학과">한국어학과</option>
+        <option value="글로벌커뮤니케이션학부">글로벌커뮤니케이션학부</option>
+        <option value="글로벌커뮤니케이션학부 영미어문1">글로벌커뮤니케이션학부 영미어문</option>
+        <option value="글로벌커뮤니케이션학부 영미문화">글로벌커뮤니케이션학부 영미문화</option>
+        <option value="건축공학과">건축공학과</option>
+        <option value="기계공학과">기계공학과</option>
+        <option value="원자력공학과">원자력공학과</option>
+        <option value="사회기반시스템공학과">사회기반시스템공학과</option>
+        <option value="화학공학과">화학공학과</option>
+        <option value="건축학과">건축학과</option>
+        <option value="산업경영공학과">산업경영공학과</option>
+        <option value="정보전자신소재공학과">정보전자신소재공학과</option>
+        <option value="환경학및환경공학과">환경학및환경공학과</option>
+        <option value="생체의공학">생체의공학</option>
+        <option value="전자공학과">전자공학과</option>
+        <option value="유전공학과">유전공학과</option>
+        <option value="식물·환경신소재공학과">식물·환경신소재공학과</option>
+        <option value="원예생명공학과">원예생명공학과</option>
+        <option value="식품생명공학과">식품생명공학과</option>
+        <option value="한방재료공학과">한방재료공학과</option>
+        <option value="국제경영학부 국제경영전공">국제경영학부 국제경영전공</option>
+        <option value="국제경영학부 기업회계·세무전공">국제경영학부 기업회계·세무전공</option>
+        <option value="도예학과">도예학과</option>
+        <option value="Post Modern음악학과">Post Modern음악학과</option>
+        <option value="연극영화학과">연극영화학과</option>
+        <option value="산업디자인학과">산업디자인학과</option>
+        <option value="환경조경디자인학과">환경조경디자인학과</option>
+        <option value="의류디자인학과">의류디자인학과</option>
+        <option value="디지털콘텐츠학과">디지털콘텐츠학과</option>
+        <option value="시각디자인학과">시각디자인학과</option>
+        <option value="태권도학과">태권도학과</option>
+        <option value="체육학과">체육학과</option>
+        <option value="스포츠의학과">스포츠의학과</option>
+        <option value="스포츠지도학과">스포츠지도학과</option>
+        <option value="골프산업학과">골프산업학과</option>
+        <option value="응용수학과">응용수학과</option>
+        <option value="응용물리학과">응용물리학과</option>
+        <option value="응용화학과">응용화학과</option>
+        <option value="우주과학과">우주과학과</option>
+        <option value="국제학과">국제학과</option>
+        <option value="동서의과학과">동서의과학과</option>
+        <option value="연계전공 공통과학전공">연계전공 공통과학전공</option>
+      </select>
+    </div>
+    <div class="form-item clearfix">
+      <p>학기 :</p>
+      <select name="semester" required>
+        <option value="" selected disabled hidden>학기를 선택해 주세요.</option>
+        <option value = "2017학년도 2학기">2017학년도 2학기</option>
+        <option value = "2017학년도 1학기">2017학년도 1학기</option>
+        <option value = "2016학년도 2학기">2016학년도 2학기</option>
+        <option value = "2016학년도 1학기">2016학년도 1학기</option>
+        <option value = "2015학년도 2학기">2015학년도 2학기</option>
+        <option value = "2015학년도 1학기">2015학년도 1학기</option>
+        <option value = "2014학년도 2학기">2014학년도 2학기</option>
+        <option value = "2014학년도 1학기">2014학년도 1학기</option>
+        <option value = "2013학년도 2학기">2013학년도 2학기</option>
+        <option value = "2013학년도 1학기">2013학년도 1학기</option>
+        <option value = "기타">기타</option>
+      </select>
+    </div>
+    <div class="form-item full-item clearfix">
+      <p>내용 :</p>
+      <textarea name="content" cols="30" rows="10"></textarea>
+    </div>
+    <div class="form-item full-item clearfix">
+      <p>첨부파일 :</p>
+      <input type="file" name="jokbo" class="input-file">
+    </div>
+    <div class="button-item">
+      <button type="submit" class="btn bt-submit">기부하기</button>
+    </div>
+  </form>
+</main>
+<footer class="footer">
+  <div class="copy-component">
+    <p>© 2018 경희족닷컴 ALL RIGHTS RESERVED.</p>
+    <a class="email" href="#">
+      hyeok1323@gmail.com
+    </a>
+  </div>
+</footer>
