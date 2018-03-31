@@ -33,10 +33,11 @@ class HomeController < ApplicationController
   end
   
   def view_1
-    @prof_name = params[:prof_name]
+    @search = params[:search]
     @post_all = Jokbo.all
-    @post_prof = @post_all.where("prof LIKE ?", "%#{@prof_name}%")
-  
+    @post_prof = @post_all.where("prof LIKE ?", "%#{@search}%")
+    @post_course = @post_all.where("course LIKE ?", "%#{@search}%")
+    @all_count = @post_prof.count + @post_course.count
   end
   
   def view_2

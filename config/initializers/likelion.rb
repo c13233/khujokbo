@@ -9,4 +9,13 @@ CarrierWave.configure do |config|
   config.fog_directory  = ENV['AWS_BUCKET']                                   # required
   config.fog_public     = true                                                    # optional, defaults to true
   config.fog_attributes = {} # optional, defaults to {}
+  if ! Rails.env.test?
+    config.fog_credentials = {
+      :provider               => 'AWS',
+      :aws_access_key_id      => ENV['AWS_ACCESS_KEY'],
+      :aws_secret_access_key  => ENV['AWS_SECRET_KEY'],
+      :region                 => 'ap-northeast-2',
+      :endpoint               => ENV['AWS_BUCKET']
+    }
+  end
 end

@@ -18,10 +18,10 @@
     <div class="wrapper banner-group">
       <div class="bold-area">
         <p>
-          "<%= @prof_name %>" 교수님의 족보 검색 결과
+          "<%= @search %>" 검색에 따른 결과
         </p>
         <p>
-          <%= @post_prof_count %>
+          <%= @all_count%>
           <span>개의 족보가 기부 됨</span>
         </p>
       </div>
@@ -56,6 +56,27 @@
         </a>
       </div>
       <% end %>
+      <% @post_course.each do |p| %>
+      <div class="subject-card">
+        <a href="/home/post/<%= p.id %>">
+          <div class="card-container">
+            <dl>
+              <dt>
+                <%= p.course %>
+              </dt>
+              <dd>
+                <%= p.prof %>
+              </dd>
+              <dd>
+                <%= p.semester %>
+              </dd>
+            </dl>
+          </div>
+        </a>
+      </div>
+      <% end %>
+      
+      
     </div>
   </div>
 </main>
