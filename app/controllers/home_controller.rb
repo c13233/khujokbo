@@ -35,8 +35,8 @@ class HomeController < ApplicationController
   def view_1
     @prof_name = params[:prof_name]
     @post_all = Jokbo.all
-    @post_prof = @post_all.where(prof LIKE?: %@prof_name%)
-    @post_prof_count = @post_prof.count
+    @post_prof = @post_all.where("prof LIKE ?", "%#{@prof_name}%")
+  
   end
   
   def view_2
