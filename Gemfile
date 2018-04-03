@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-gem 'figaro'
 gem 'rails_admin', '~> 1.3'
 gem 'carrierwave'
 gem 'fog', '~> 1.38'
