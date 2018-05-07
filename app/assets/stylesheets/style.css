@@ -705,7 +705,7 @@ textarea{
   }
   .main .form-group .form-item{
     float:left;
-    width: 100%
+    width: 100%;
     margin: 10px auto;
     box-sizing: border-box;
   }
