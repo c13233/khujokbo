@@ -1,4 +1,6 @@
 Rails.application.configure do
+  config.assets.compile = true
+  config.assets.precompile =  ['*.js', '*.css', '*.css.erb'] 
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
