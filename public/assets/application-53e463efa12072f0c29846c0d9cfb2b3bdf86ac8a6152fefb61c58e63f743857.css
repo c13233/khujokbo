@@ -1,0 +1,1154 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body{
+  min-width: 400px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: sans-serif;
+  background-color: #fff;
+  color:#000;
+}
+.clearfix::after {
+  content:'';
+  display:block;
+  clear:both;
+}
+a{
+  font-style: inherit;
+  color:inherit;
+  text-decoration: none;
+}
+.input {
+  display:inline-block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  /* iOS Safari에서 Input의 기본 스타일을 없애주는 CSS */
+  -webkit-appearance: none;
+  /* 외곽선이 약간 둥근 형태 */
+  border-radius: 0;
+  font:inherit;
+  transition:.3s opacity ease;
+}
+textarea{
+  display:inline-block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  /* iOS Safari에서 Input의 기본 스타일을 없애주는 CSS */
+  -webkit-appearance: none;
+  /* 외곽선이 약간 둥근 형태 */
+  border-radius: 0;
+  font:inherit;
+  transition:.3s opacity ease;
+}
+
+.btn{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  -webkit-appearance: none;
+  font: inherit;
+}
+.btn-svg{
+  display: inline-block;
+  position: relative;
+  padding: 12px;
+}
+.btn-svg::after {
+  content: '';
+  display:block;
+  position: absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+}
+.wrapper{}
+.wrapper-body{
+  height:100%;
+}
+.col{
+  float:left;
+  width: 100%;
+}
+.col-6{
+  width: 50%;
+}
+.header{
+  position: fixed;
+  left:0;
+  top:30px;
+  width:100%;
+  z-index: 100000;
+}
+.header .logo-area{
+  background: none;
+}
+.header .logo-area a{
+  position:absolute;
+  left:30px;
+}
+.header .logo-area a h1{
+  color: #000;
+  font-weight: bold;
+  padding: 10px;
+}
+.header .logo-area a h1 span{
+  font-size: 1.5em;
+}
+.header .etc-area{
+  position: absolute;
+  top:3px;
+  right:30px;
+}
+.header .etc-area .btn-write{
+  font-weight: bold;
+  position: relative;
+  right: 20px;
+  padding:7px;
+  border: 2px solid #000;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.header .etc-area .btn-write:hover{
+  color:#fff;
+  background-color: #000;
+  transition: 0.3s all ease;
+}
+.main{
+}
+.main .wrapper{
+}
+.main .banner-group{
+  width: 100%;
+  height: 150px;
+  background: #fff;
+  text-align: center;
+  margin-top: 150px;
+}
+.main .bold-area{
+  margin-top: 100px;
+}
+.main .bold-area p{
+  font-size: 4em;
+  font-weight: bold;
+  position: relative;
+  transform: translateY(0);
+  z-index: 1;
+}
+.main .bold-area p span{
+  font-size: 0.5em;
+  position: relative;
+  bottom:10px;
+}
+.main .search-group{
+  margin:0 auto;
+}
+.main .search-group .input-area{
+  width:500px;
+  margin:0 auto 100px;
+  position:relative;
+  left:55px;
+}
+.main .search-group .input-area input{
+  border-bottom: 2px solid #000;
+  width: 400px;
+  height: 50px;
+  outline: none;
+}
+.main .search-group .input-area button{}
+.main .search-group .major-area{
+  margin-bottom:100px;
+}
+.main .search-group .major-area a{}
+.main .search-group .major-area .major-btn{
+  margin: 0 auto;
+  width:300px;
+  height: 60px;
+  border: 2px solid #000;
+  text-align: center;
+}
+.main .search-group .major-area .major-btn:hover{
+  opacity: 0.8;
+  transition: 0.3s all ease;
+}
+.main .search-group .major-area .major-btn p{
+  float:left;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 16px;
+  width:270px;
+  position:relative;
+  left:15px;
+}
+.main .search-group .major-area .major-btn:hover p{
+  opacity: 0.8;
+  transition: 0.1s all ease;
+}
+.main .search-group .major-area .major-btn object{
+  float: left;
+  width: 30px;
+  margin-top: 15px;
+  position: relative;
+  right: 5px;
+  z-index:-999;
+}
+.main .search-group .major-area .major-btn:hover object{
+  opacity: 0.8;
+  transition: 0.1s all ease;
+}
+.main .major-area .major-group{
+  border: 2px solid #ccc;
+  width:880px;
+  margin: 0 auto;
+  display: none;
+}
+.main .major-area .major-group div:last-child{
+  margin-bottom: 20px;
+}
+.main .major-area .show-modal{
+  display: block;
+}
+.main .major-area .major-group h2{
+  margin: 0 0 30px;
+  color: #000;
+}
+.main .major-area .major-group .major-item{
+  float:left;
+  width:20%;
+  height:50px;
+  font-size: 1em;
+  font-weight: bold;
+}
+.main .major-area .major-group .item-hover{
+  text-align: center;
+  margin:0 auto;
+  height:30px;
+  width: 150px;
+  color:#000;
+  background-color: #fff;
+  transition: 0.3s all ease;
+  border-radius: 3px;
+ }
+.main .major-area .major-group .item-hover{
+  padding-top:12px;
+}
+.main .major-area .major-group .item-hover:hover{
+  color:#fff;
+  background-color: #000;
+}
+.main .recent-group{
+  min-height: 250px;
+}
+.main .recent-group h2{
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+}
+.main .recent-group .subject-components{
+  margin: 10px auto;
+  width: 900px;
+  display: block;
+}
+.main .recent-group .subject-components .subject-card{
+  float:left;
+  padding: 10px;
+  width:33.333333%;
+  box-sizing: border-box;
+}
+.main .recent-group .subject-components .subject-card .card-container{
+  border: 2px solid #ccc;
+  height:130px;
+  padding:10px;
+  position: relative;
+}
+.main .recent-group .subject-components .subject-card .card-container:hover{
+  border: 2px solid #000;
+  transition: 0.5s all ease;
+}
+.recent-group .subject-card dl{
+  padding:5px
+}
+.recent-group .subject-card dt{
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom:15px;
+}
+.recent-group .subject-card dd{
+  margin-top:0;
+  font-size: 1em;
+  padding-bottom: 10px;
+}
+.recent-group .subject-card .btn-download object{
+  opacity:0.6;
+  transition: 0.3s all ease;
+}
+.recent-group .subject-card .card-container:hover .btn-download object{
+  opacity:1;
+}
+/* create.html */
+.main .form-group{
+  position:relative;
+  background-color: #fff;
+  margin-top: 100px;
+  padding-top:30px;
+  width:700px;
+  height: 500px;
+  margin: 20px auto 0;
+  box-shadow: 2px 0px 2px rgba(0,0,0,2);
+}
+.main h2{
+  font-size:1.5em;
+  font-weight:bold;
+  text-align: center;
+  margin-top:50px;
+  padding:20px 10px 5px;
+  color: #000;
+}
+.main .form-group .form-item{
+  float:left;
+  width: 350px;
+  margin:10px auto;
+  box-sizing: border-box;
+}
+.main .form-group .full-item{
+  width:100%;
+}
+.main .form-group .form-item p{
+  width: 100px;
+  float:left;
+  font-size:1.2em;
+  font-weight:bold;
+  padding-top:20px;
+  padding-right:0px;
+  box-sizing: border-box;
+  text-align: right;
+  position: relative;
+  bottom: 11px;
+  right: 10px;
+}
+.main .form-group .form-item input{
+  float:left;
+  border-bottom: 2px solid #ccc;
+  height: 40px;
+  outline: none;
+  width: 230px;
+}
+.main .form-group .form-item input:focus{
+  border-bottom: 2px solid #000;
+  transition: 0.3s all ease;
+}
+.main .form-group .form-item select{
+  width: 230px;
+  position: relative;
+  top: 5px;
+  height: 30px;
+}
+.main .form-group .full-item .input-file{
+  height:30px;
+  width: 170px;
+  font-size:0.9em;
+  position:relative;
+  top:10px;
+}
+.main .form-group .name-desc{
+  font-size:12px;
+  color:#999;
+  margin-left:100px;
+}
+.main .form-group .form-item textarea{
+  padding-top: 20px;
+  float:left;
+  border-bottom: 2px solid #ccc;
+  height: 100px;
+  outline: none;
+  width: 83%;
+  position: relative;
+  bottom:10px;
+}
+.main .form-group .form-item textarea:focus{
+  border-bottom: 2px solid #000;
+  transition: 0.3s all ease;
+}
+.main .form-group .button-item{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.main .form-group .button-item button{
+  font-size:1.2em;
+  font-weight: bold;
+  color:#000;
+  background-color: #fff;
+  height:50px;
+  width:100px;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+.main .form-group .button-item button:hover{
+  background-color: #000;
+  color:#fff;
+  transition: 0.3s all ease;
+}
+
+/* view.html */
+.view-result-group{
+  margin-top: 100px;
+  margin-bottom:0;
+}
+.view-result-group h2{
+  color: #000;
+  display: none;
+}
+.view-result-group .banner-group{
+  margin-top:0;
+}
+.view-result-group .banner-group .bold-area{}
+.view-result-group .banner-group .bold-area p{
+}
+.view-result-group .banner-group .bold-area p:first-child{
+  font-size: 2em;
+}
+.view-result-group .banner-group .bold-area p span{
+}
+.view-result-group .search-group{}
+.view-result-group .search-group .input-area{
+  margin-bottom: 50px;
+}
+.view-result-group .search-group .input-area input{}
+.view-result-group .search-group .input-area button{}
+.view-result-group .search-group .input-area button object{}
+
+/* post.html */
+.main .post-h-tag{
+  display: none;
+}
+.main .text-group{
+  position:relative;
+  background-color: #fff;
+  padding-top:30px;
+  width:700px;
+  min-height: 100px;
+  margin: 200px auto;
+  border: 3px solid #ccc;
+}
+.main .text-group .text-item{
+  float:left;
+  width: 350px;
+  margin:10px auto;
+  box-sizing: border-box;
+}
+.main .text-group .full-item{
+  width:100%;
+}
+.main .text-group .text-item p{
+  width: 100px;
+  float:left;
+  font-size:1.2em;
+  font-weight:bold;
+  padding-top:20px;
+  padding-right:0px;
+  box-sizing: border-box;
+  text-align: right;
+  position: relative;
+  bottom: 20px;
+  right: 10px;
+}
+.main .text-group .text-item .text-desc-item{
+  float:left;
+  width:230px;
+  border-bottom: 2px solid #000;
+}
+.main .text-group .name-desc{
+  font-size:12px;
+  color:#999;
+  margin-left:100px;
+}
+.main .text-group .button-item{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.main .text-group .title-group{
+  margin: 0 auto;
+  width:900px;
+  position:relative;
+  right:20px;
+  bottom:50px;
+}
+.main .text-group .title-group .subject-card{
+  float:left;
+  padding: 10px;
+  width:33.333333%;
+  box-sizing: border-box;
+}
+.main .text-group .title-group .subject-card .card-container{
+  border: 2px solid #000;
+  height:130px;
+  padding:10px;
+  position: relative;
+  z-index: 999;
+  background-color: #fff;
+}
+.main .text-group .title-group .subject-card .card-container:hover{
+  border: 2px solid #000;
+  transition: 0.5s all ease;
+}
+.text-group .title-group .subject-card dl{
+  padding:5px;
+}
+.text-group .title-group .subject-card dt{
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom:15px;
+}
+.text-group .title-group .subject-card dd{
+  margin-top:0;
+  font-size: 1em;
+  padding-bottom: 10px;
+}
+.text-group .detail-group{}
+.text-group .detail-group dl{
+  font-size: 1.2em;
+  padding-bottom: 10px;
+}
+.text-group .detail-group dl dt{
+  width: 80px;
+  display: inline-block;
+  font-weight: bold;
+}
+.text-group .detail-group dl dd{
+  margin-left: 10px;
+  display: inline-block;
+}
+.text-group .detail-group .detail-item-link{
+  color: royalblue;
+}
+.text-group .detail-group .detail-item-link:hover{
+  color: #42A5F5;
+}
+.text-group .detail-group .detail-item-link:active{
+  color: darkblue;
+}
+.text-group .content-item{
+  width: 100%;
+  display: inline-block;
+  padding: 0 30px 70px;
+}
+.text-group .content-item p{
+  line-height: 1.5em;
+  font-size: 1.3em;
+}
+/* footer */
+.footer{
+  margin-top: 200px;
+  width:100%;
+  height:120px;
+  background: black;
+  color:#fff;
+  font-size: 0.7em;
+  line-height: 1.4em;
+}
+.footer .copy-component{
+  position:relative;
+}
+.footer .copy-component p{
+  position:absolute;
+  top:50px;
+  left:40px;
+}
+.footer .copy-component .email{
+  position: absolute;
+  top:50px;
+  right:140px;
+}
+.footer .copy-component .top{
+  color:#000;
+  font-size: 15px;
+  position: absolute;
+  top: -100px;
+  right:140px;
+  width:20px;
+  height:100px;
+}
+.footer .copy-component .top::after{
+  content:'';
+  display: block;
+  background: #000;
+  margin: 15px 9px;
+  width: 1px;
+  height: 70px;
+  transition: 1s all ease;
+}
+.footer .copy-component .top:hover::after{
+  height:0;
+}
+@media (min-width: 1025px){
+  
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .main .major-area .major-group{
+    border: 2px solid #ccc;
+    width:90%;
+    margin: 0 auto;
+    display: none;
+  }
+  .main .major-area .major-group div:last-child{
+    margin-bottom: 20px;
+  }
+  .main .major-area .show-modal{
+    display: block;
+  }
+  .main .major-area .major-group h2{
+    margin: 0 0 30px;
+    color: #000;
+  }
+  .main .major-area .major-group .major-item{
+    float:left;
+    width:25%;
+    height:50px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .main .major-area .major-group .item-hover{
+    text-align: center;
+    margin:0 auto;
+    height:100%;
+    width: 90%;
+    color:#000;
+    background-color: #fff;
+    transition: 0.3s all ease;
+    border-radius: 3px;
+   }
+  .main .recent-group .subject-components{
+    margin: 5px auto;
+    width:100%;
+    display: block;
+  }
+  .main .text-group{
+    width:80%;
+  }
+  .view-result-group .search-group .input-area{
+    width:400px;
+  }
+  .view-result-group .search-group .input-area input{
+    width:90%;
+  }
+  .view-result-group .search-group .input-area button{
+    width:8%;
+  }
+  
+  .main .form-group{
+    position:relative;
+    background-color: #fff;
+    margin-top: 100px;
+    padding-top:30px;
+    padding-bottom: 100px;
+    width: 80%;
+    height: 100%;
+    margin: 20px auto 0;
+  }
+  .main .form-group .form-item textarea{
+    padding-top: 20px;
+    float:left;
+    border-bottom: 2px solid #ccc;
+    height: 100px;
+    outline: none;
+    width: 60%;
+    position: relative;
+    bottom:10px;
+  }
+  .main .form-group .form-item{
+    float:left;
+    width: 100%;
+    margin: 10px auto;
+    box-sizing: border-box;
+  }
+  .main .form-group .full-item{
+    width:100%;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (max-width: 480px) {
+  .header{
+    position: relative;
+    left:0;
+    top:0px;
+    padding-top: 10px;
+    width:100%;
+    height:50px;
+    z-index: 100000;
+    background-color: #fff;
+    
+  }
+  .header .logo-area a{
+    position:absolute;
+    left:10px;
+  }
+  .header .logo-area a h1{
+    color: #000;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .header .logo-area a h1 span{
+    font-size: 1.5em;
+  }
+  .header .etc-area{
+    position: absolute;
+    top:15px;
+    right:0px;
+  }
+  .header .etc-area .btn-write{
+    font-weight: bold;
+    position: relative;
+    right: 20px;
+    padding:7px;
+    border: 2px solid #000;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+  .main .major-area .major-group{
+    border: 2px solid #ccc;
+    width:90%;
+    margin: 0 auto;
+    display: none;
+  }
+  .main .major-area .major-group div:last-child{
+    margin-bottom: 20px;
+  }
+  .main .major-area .show-modal{
+    display: block;
+  }
+  .main .major-area .major-group h2{
+    margin: 0 0 30px;
+    color: #000;
+  }
+  .main .major-area .major-group .major-item{
+    float:left;
+    width:33.333333%;
+    height:40px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .main .major-area .major-group .item-hover{
+    text-align: center;
+    margin:0 auto;
+    height:100%;
+    width: 100%;
+    color:#000;
+    background-color: #fff;
+    transition: 0.3s all ease;
+    border-radius: 3px;
+   }
+  .main .major-area .major-group .item-hover{
+    padding-top:0px;
+  }
+  .main .major-area .major-group .item-hover:hover{
+    color: #000;
+    background-color: #fff;
+  }
+  .main .recent-group{
+    min-height: 250px;
+  }
+  .main .recent-group h2{
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  .main .recent-group .subject-components{
+    margin: 5px auto;
+    width:100%;
+    display: block;
+  }
+  .main .recent-group .subject-components .subject-card{
+    float:left;
+    padding: 10px;
+    width:50%;
+    box-sizing: border-box;
+  }
+  .main .recent-group .subject-components .subject-card .card-container{
+    border: 2px solid #ccc;
+    height:130px;
+    padding:10px;
+    position: relative;
+  }
+  .main .recent-group .subject-components .subject-card .card-container dl{
+    font-size: 0.9em;
+  }
+  .main .search-group .input-area{
+    width:80%;
+    margin:0 auto 100px;
+    position: inherit;
+  }
+  .main .search-group .input-area input{
+    border-bottom: 2px solid #000;
+    width: 85%;
+    height: 50px;
+    outline: none;
+    box-sizing: border-box;
+    border-bottom: 2px solid #000;
+  }
+  .main .search-group .input-area button{
+    width: 10%;
+  }
+  .main .search-group .major-area{
+    margin-bottom:100px;
+  }
+  .main .search-group .major-area a{}
+  .main .search-group .major-area .major-btn{
+    margin: 0 auto;
+    width:300px;
+    height: 60px;
+    border: 2px solid #000;
+    text-align: center;
+  }
+  .main .search-group .major-area .major-btn:hover{
+    opacity: 0.8;
+    transition: 0.3s all ease;
+  }
+  .main .search-group .major-area .major-btn p{
+    float:left;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 16px;
+    width:270px;
+    position:relative;
+    left:15px;
+  }
+  .main .search-group .major-area .major-btn object{
+    float: left;
+    width: 30px;
+    margin-top: 15px;
+    position: relative;
+    right: 5px;
+    z-index:-999;
+  }
+  .footer .copy-component .email{
+    position: absolute;
+    top:70px;
+    left:40px;
+  }
+  .footer .copy-component .top{
+    color:#000;
+    font-size: 15px;
+    position: absolute;
+    top: -100px;
+    right:50px;
+    width:20px;
+    height:100px;
+  }
+  /* view */
+  .view-result-group .banner-group .bold-area p{
+    font-size: 2.5em;
+  }
+  .view-result-group .banner-group .bold-area p:first-child{
+    font-size: 1.3em;
+  }
+  .view-result-group .search-group .input-area{
+    width:300px;
+  }
+  .view-result-group .search-group .input-area input{
+    width:90%;
+  }
+  .view-result-group .search-group .input-area button{
+    width:5%;
+  }
+  .view-result-group .search-group .input-area button object{}
+
+  /* post.html */
+  .main .text-group{
+    position:relative;
+    background-color: #fff;
+    padding-top:30px;
+    width:90%;
+    min-height: 100px;
+    margin: 80px auto;
+    border: 3px solid #ccc;
+  }
+  .main .text-group .text-item{
+    float:left;
+    width: 350px;
+    margin:10px auto;
+    box-sizing: border-box;
+  }
+  .main .text-group .full-item{
+    width:100%;
+  }
+  .main .text-group .text-item p{
+    width: 100px;
+    float:left;
+    font-size:1.2em;
+    font-weight:bold;
+    padding-top:20px;
+    padding-right:0px;
+    box-sizing: border-box;
+    text-align: right;
+    position: relative;
+    bottom: 20px;
+    right: 10px;
+  }
+  .main .text-group .text-item .text-desc-item{
+    float:left;
+    width:230px;
+    border-bottom: 2px solid #000;
+  }
+  .main .text-group .name-desc{
+    font-size:12px;
+    color:#999;
+    margin-left:100px;
+  }
+  .main .text-group .button-item{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+  .main .text-group .title-group{
+    margin: 0 auto;
+    width:100%;
+    position:relative;
+    right:20px;
+    bottom:50px;
+  }
+  .main .text-group .title-group .subject-card{
+    float:left;
+    padding: 0px 10px 10px;
+    width:100%;
+    box-sizing: border-box;
+  }
+  .main .text-group .title-group .subject-card .card-container{
+    border: 2px solid #000;
+    height:130px;
+    width: 250px;
+    padding:10px;
+    position: relative;
+    z-index: 999;
+    background-color: #fff;
+  }
+  .main .text-group .title-group .subject-card .card-container:hover{
+    border: 2px solid #000;
+    transition: 0.5s all ease;
+  }
+  .text-group .title-group .subject-card dl{
+    padding:5px;
+  }
+  .text-group .title-group .subject-card dt{
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom:15px;
+  }
+  .text-group .title-group .subject-card dd{
+    margin-top:0;
+    font-size: 1em;
+    padding-bottom: 10px;
+  }
+  .text-group .detail-group{
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .text-group .detail-group dl{
+    font-size: 1.2em;
+    padding-bottom: 10px;
+    position:relative;
+    bottom: 45px;
+  }
+  .text-group .detail-group dl dt{
+    width: 80px;
+    display: inline-block;
+    font-weight: bold;
+  }
+  .text-group .detail-group dl dd{
+    margin-left: 10px;
+    display: inline-block;
+  }
+  .text-group .detail-group .detail-item-link{
+    color: royalblue;
+  }
+  .text-group .detail-group .detail-item-link:hover{
+    color: #42A5F5;
+  }
+  .text-group .detail-group .detail-item-link:active{
+    color: darkblue;
+  }
+  .text-group .content-item{
+    width: 100%;
+    display: inline-block;
+    padding: 0 5px 60px;
+  }
+  .text-group .content-item p{
+    line-height: 1.5em;
+    font-size: 1.3em;
+  }
+  /* create.html */
+  .main .form-group{
+    position:relative;
+    background-color: #fff;
+    margin-top: 100px;
+    padding-top:30px;
+    padding-bottom: 100px;
+    width:95%;
+    height: 100%;
+    margin: 20px auto 0;
+    box-shadow: 2px 0px 2px rgba(0,0,0,2);
+  }
+  .main h2{
+    font-size:1.5em;
+    font-weight:bold;
+    text-align: center;
+    margin-top:50px;
+    padding:20px 10px 5px;
+    color: #000;
+  }
+  .main .form-group .form-item{
+    float:left;
+    width: 100%;
+    margin: 10px auto;
+    box-sizing: border-box;
+  }
+  .main .form-group .full-item{
+    width:100%;
+  }
+  .main .form-group .form-item p{
+    width: 100px;
+    float:left;
+    font-size:1.2em;
+    font-weight:bold;
+    padding-top:20px;
+    padding-right:0px;
+    box-sizing: border-box;
+    text-align: right;
+    position: relative;
+    bottom: 11px;
+    right: 10px;
+  }
+  .main .form-group .form-item input{
+    float:left;
+    border-bottom: 2px solid #ccc;
+    height: 40px;
+    outline: none;
+    width: 230px;
+  }
+  .main .form-group .form-item input:focus{
+    border-bottom: 2px solid #000;
+    transition: 0.3s all ease;
+  }
+  .main .form-group .form-item select{
+    width: 50%px;
+    position: relative;
+    top: 5px;
+    height: 30px;
+  }
+  .main .form-group .full-item .input-file{
+    height:30px;
+    width: 50%;
+    font-size:0.9em;
+    position:relative;
+    top:10px;
+  }
+  .main .form-group .name-desc{
+    font-size:12px;
+    color:#999;
+    margin-left:100px;
+  }
+  .main .form-group .form-item textarea{
+    padding-top: 20px;
+    float:left;
+    border-bottom: 2px solid #ccc;
+    height: 100px;
+    outline: none;
+    width: 60%;
+    position: relative;
+    bottom:10px;
+  }
+  .main .form-group .form-item textarea:focus{
+    border-bottom: 2px solid #000;
+    transition: 0.3s all ease;
+  }
+  .main .form-group .button-item{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+  .main .form-group .button-item button{
+    font-size:1.2em;
+    font-weight: bold;
+    color:#000;
+    background-color: #fff;
+    height:50px;
+    width:100px;
+    border: 2px solid #000;
+    border-radius: 10px;
+  }
+  .main .form-group .button-item button:hover{
+    background-color: #000;
+    color:#fff;
+    transition: 0.3s all ease;
+  }
+
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
