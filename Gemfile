@@ -2,8 +2,6 @@ source 'https://rubygems.org'
 gem 'therubyracer', platforms: :ruby
 gem 'rails_admin', '~> 1.3'
 
-gem 'rails_admin'
-
 gem 'carrierwave'
 gem 'fog', '~> 1.38'
 gem 'figaro'
