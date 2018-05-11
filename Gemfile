@@ -1,10 +1,9 @@
 source 'https://rubygems.org'
-<<<<<<< HEAD
 gem 'therubyracer', platforms: :ruby
 gem 'rails_admin', '~> 1.3'
-=======
+
 gem 'rails_admin'
->>>>>>> 2c7fb1ea022d8bb0479186661b2561aa20689b85
+
 gem 'carrierwave'
 gem 'fog', '~> 1.38'
 gem 'figaro'
