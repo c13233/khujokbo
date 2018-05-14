@@ -199,7 +199,16 @@ textarea{
   height: 50px;
   outline: none;
 }
-.main .search-group .input-area button{}
+.main .search-group .input-area button{
+  font-weight: bold;
+}
+.main .search-group .input-area button span{
+  font-size: 1.5em;
+  display:block;
+  -ms-transform: rotate(315deg); /* IE 9 */
+  -webkit-transform: rotate(315deg); /* Safari */
+  transform: rotate(315deg);
+}
 .main .search-group .major-area{
   margin-bottom:100px;
 }
@@ -228,17 +237,12 @@ textarea{
   opacity: 0.8;
   transition: 0.1s all ease;
 }
-.main .search-group .major-area .major-btn object{
-  float: left;
-  width: 30px;
-  margin-top: 15px;
-  position: relative;
-  right: 5px;
-  z-index:-999;
-}
-.main .search-group .major-area .major-btn:hover object{
-  opacity: 0.8;
-  transition: 0.1s all ease;
+.main .search-group .major-area .major-btn p span{
+  margin-left: 5px;
+  display:inline-block;
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */
+  transform: rotate(90deg);
 }
 .main .major-area .major-group{
   border: 2px solid #ccc;
@@ -276,10 +280,14 @@ textarea{
 .main .major-area .major-group .item-hover{
   padding-top:12px;
 }
+.major-area .major-group .major-item .long-item{
+  font-size: 0.9em;
+}
 .main .major-area .major-group .item-hover:hover{
   color:#fff;
   background-color: #000;
 }
+
 .main .recent-group{
   min-height: 250px;
 }
@@ -865,14 +873,6 @@ textarea{
     width:270px;
     position:relative;
     left:15px;
-  }
-  .main .search-group .major-area .major-btn object{
-    float: left;
-    width: 30px;
-    margin-top: 15px;
-    position: relative;
-    right: 5px;
-    z-index:-999;
   }
   .footer .copy-component .email{
     position: absolute;
