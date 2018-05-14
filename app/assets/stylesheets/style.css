@@ -205,11 +205,6 @@ textarea{
 .main .search-group .input-area button span{
   font-size: 1.5em;
   display:block;
-  -webkit-transform: rotate(315deg);
-  -moz-transform: rotate(315deg);
-  -o-transform: rotate(315deg);
-  -ms-transform: rotate(315deg);
-  transform: rotate(315deg);
 }
 .main .search-group .major-area{
   margin-bottom:100px;
@@ -242,11 +237,6 @@ textarea{
 .main .search-group .major-area .major-btn p span{
   margin-left: 5px;
   display:inline-block;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
 }
 .main .major-area .major-group{
   border: 2px solid #ccc;
