@@ -201,10 +201,11 @@ textarea{
 }
 .main .search-group .input-area button{
   font-weight: bold;
+  width: 30px;
+  height: 30px;
 }
-.main .search-group .input-area button span{
-  font-size: 1.5em;
-  display:block;
+.main .search-group .input-area button i{
+  font-size: 2em;
 }
 .main .search-group .major-area{
   margin-bottom:100px;
